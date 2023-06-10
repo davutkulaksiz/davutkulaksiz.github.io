@@ -14,38 +14,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/10a0a43fe7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="gatto.js"></script>
   </head>
   <body>
-    <nav>
+    <nav data-toggled="false" data-transitionable="false">
       <div id="nav-logo-section" class="nav-section">
-        <a href="#">ICON</a>
+        <a
+          target="”_blank”"
+          href="https://github.com/davutkulaksiz/ml-interface-wizard"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <h2>ML Interface Wizard</h2>
       </div>
-      <div id="nav-link-section" class="nav-section">
-        <a href="#">ABOUT</a>
-        <a href="#">WORK</a>
+      <div id="nav-mobile-section">
+        <div id="nav-link-section" class="nav-section">
+            <h2>Developed by</h2>
+          <a target="_blank" href="https://github.com/nikolaDrljaca"
+            >Nikola Drljaca</a
+          >
+          <a target="_blank" href="https://github.com/davutkulaksiz"
+            >Davut Kulaksız</a
+          >
+        </div>
+        <div id="nav-social-section" class="nav-section">
+            <h2>Deployed here</h2>
+          <a href="http://143.42.204.177/" target="_blank">
+            <i class="fa-solid fa-rocket fa-lg"></i>
+          </a>
+        </div>
+        <div id="nav-contact-section" class="nav-section">
+            <h2>Supervised by</h2>
+          <a
+            target="_blank"
+            href="https://yunus.hacettepe.edu.tr/~akal/"
+            >Fuat Akal</a
+          >
+        </div>
       </div>
-      <div id="nav-social-section" class="nav-section">
-        <a href="#">ICON SOCIAL MEDIA</a>
-        <a href="#">ICON SOCIAL MEDIA</a>
-        <a href="#">ICON SOCIAL MEDIA</a>
-      </div>
-      <div id="nav-contact-section" class="nav-section">
-        <a href="#">GET IN TOUCH</a>
-      </div>
+      <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
+
     <main>
-      <article>
+      <article data-index="0" data-status="active">
         <div class="article-image-section article-section"></div>
-        <div class="article-description-section article-section"></div>
-        <div class="article-title-section article-section"></div>
-        <div class="article-nav-section article-section"></div>
+        <div class="article-description-section article-section">
+          <p>
+            ML Interface Wizard is a full stack application that aims to
+            simplify the creation of front-end interfaces for Machine Learning
+            models. Watch our demo to see how it works
+            <a class="yt-link" href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i></a
+            >.
+          </p>
+        </div>
+        <div class="article-title-section article-section">
+          <h2>Upload your model and config file</h2>
+          <i class="fa-solid fa-cloud-arrow-up fa-lg"></i>
+        </div>
+        <div class="article-nav-section article-section">
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+          </button>
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right fa-lg"></i>
+          </button>
+        </div>
       </article>
-      <article></article>
-      <article></article>
-      <article></article>
+      <article data-index="1" data-status="inactive">
+        <div class="article-image-section article-section"></div>
+        <div class="article-description-section article-section">
+          <p>
+            It provides a user-friendly interface to interact with models, check
+            their correctness, and provide additional testing data.
+          </p>
+        </div>
+        <div class="article-title-section article-section">
+          <h2>Fill out the form</h2>
+          <i class="fa-solid fa-file-pen fa-lg"></i>
+        </div>
+        <div class="article-nav-section article-section">
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+          </button>
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right fa-lg"></i>
+          </button>
+        </div>
+      </article>
+      <article data-index="2" data-status="inactive">
+        <div class="article-image-section article-section"></div>
+        <div class="article-description-section article-section">
+          <p>
+            The application generates a UI for any Machine Learning model based
+            on model metrics and provided metadata.
+          </p>
+        </div>
+        <div class="article-title-section article-section">
+          <h2>Get predictions</h2>
+          <i class="fa-solid fa-print fa-lg"></i>
+        </div>
+        <div class="article-nav-section article-section">
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+          </button>
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right fa-lg"></i>
+          </button>
+        </div>
+      </article>
     </main>
   </body>
 </html>
