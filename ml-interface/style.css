@@ -2,6 +2,8 @@
   --background-color: rgb(6, 11, 25);
   --border-color: rgb(255, 255, 255, 0.1);
   --highlight-color: rgb(126, 87, 194);
+  --darker-highlight-color: rgb(71, 39, 140);
+  --github-color: rgb(155, 194, 87);
   --yt-color: rgb(229, 57, 53);
 }
 
@@ -407,5 +409,23 @@ main > article > .article-description-section > p > .source-link {
 main > article .yt-link,
 main > article .yt-link > i {
   color: var(--yt-color);
+  display: inline;
+}
+
+main > article .deployment-link,
+main > article .deployment-link > i {
+  color: var(--darker-highlight-color);
+  display: inline;
+}
+
+main > article .github-link,
+main > article .github-link > i {
+  color: var(--highlight-color);
+  display: inline;
+}
+
+main > article .github-link-2,
+main > article .github-link-2 > i {
+  color: var(--github-color);
   display: inline;
 }
